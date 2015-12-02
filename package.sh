@@ -22,3 +22,8 @@ EOF
 
 (set -x; md5sum packages/hello-world.tgz > packages/hello-world.md5 || exit 1)
 
+# Push package upto github
+(set -x; git add packages || exit 1)
+(set -x; git commit -m "Jekins: $BUILD_TAG" || exit 1)
+(set -x; git push origin master || exit 1)
+
