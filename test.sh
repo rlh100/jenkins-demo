@@ -5,8 +5,8 @@
 (set -x; cat - | grep "Hello World")
 
 if [ $? -eq 0 ]; then
-  echo grep test passed
+  echo Test: grep passed
 else
-  echo grep test failed
+  echo Test: grep failed: \$\?=$?
 fi
 

@@ -2,7 +2,7 @@
 
 # Build hello world web page
 
-rm hello-world.html
+rm index.html || exit 1
 
 ./hello-world.rb > index.html
 
