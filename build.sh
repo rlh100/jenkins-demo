@@ -4,6 +4,6 @@
 
 rm hello-world.html
 
-./hello-world.rb > hello-world.html
+./hello-world.rb > index.html
 
-cat hello-world.html | ./test.sh
+cat index.html | ./test.sh
