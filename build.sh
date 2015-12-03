@@ -8,3 +8,4 @@ rm -f index.html || exit 1
 
 cat index.html | ./test.sh
 
+
